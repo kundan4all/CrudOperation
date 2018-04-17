@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/item.js"></script>
+    <script src="./js/itemOpration.js"></script>
+    <script src="./js/controller.js"></script>
+</head>
+<body>
+    <h1>CRUD OPRATION</h1>
+    <fieldset>
+        <table>
+            <tr>
+               
+                    <td><label for="">ItemID</label></td>
+                    <td><label for="" id="itemNo"></label></td>
+                
+            </tr>
+            <tr>
+                <td><label for="">ItemName</label></td>
+                <td><input type="text" id="itemName" placeholder="Enter the itemName"></td>
+            </tr>
+            <tr>
+                <td><label for="">Description</label></td>
+                <td><textarea name=""  id="Desc" placeholder="enter some description"  cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="">Date</label></td>
+                <td><input type="date" id="itemDate"></td>
+
+            </tr>
+            <tr>
+                    <td><label for="">Color</label></td>
+                    <td><input type="color" id="itemColor"></td>
+            </tr>
+            <tr>
+                <td><label for="">Branch</label></td>
+                <td>
+                    <select name="" id="itembranch">
+                        <option >Delhi</option>
+                        <option >Mumbai</option>
+                        <option >Patna</option>
+                        <option >Jaipur</option>
+                        <option >Meerut</option>
+                        <option >bihta</option>
+                    </select>
+                </td>
+            </tr>
+
+        </table>
+          <h1>Total Number of Records <span id="total"></span>
+            Mark total Records are <span id="marktotal"></span>
+        </h1>
+          <h3></h3>
+        <table>
+            <tr>
+                <td><button id="add">ADD</button></td>
+                <td><button id="delete">DELETE</button></td>
+                <td><button>Search</button></td>
+                <td><button id="update">Update</button></td>
+                <!-- <td><button>Save</button></td> -->
+                <td><button id="savelocal">Save LocalStorage</button></td>
+                <td><button id="fetchlocal">Fetch</button></td>
+                <td><button id="sortbyid">Sort By ID</button></td>
+                <td><button id="sortbyname">Sort By name</button></td>
+                <td><button id="clear">Clear All</button></td>
+            </tr>
+        </table>
+
+    </fieldset>
+    <fieldset>
+        <legend>Item List</legend>
+        <table border="1">
+            <thead>
+                <tr>
+                        <th>Item No</th>
+                        <th>Item name</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                        <th>Color</th>
+                        <th>Branch</th>
+                        <th>Opration</th>
+                </tr>
+            </thead>
+            <tbody id="itemtable">
+                    
+                    
+            </tbody>
+
+        </table>
+    </fieldset>
+</body>
+</html>

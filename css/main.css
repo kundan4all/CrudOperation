@@ -1,0 +1,23 @@
+body{
+    background-color: aqua;
+}
+h1{
+    text-align: center;
+    color: blue;
+}
+h1:hover{
+    color: red;
+}
+
+.imagestyle{
+ height: 32px;
+ width: 32px;
+ cursor: pointer;
+ padding: 5px;
+
+}
+.redrow{
+    background-color: red;
+    color:yellow;
+    font-style: italic;
+    }
